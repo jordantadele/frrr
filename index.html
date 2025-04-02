@@ -412,7 +412,29 @@
       </div>
     </div>
   </div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCQlYiNYvSXsMe6T5QGT764oB0-swlu98M",
+    authDomain: "menu-616b0.firebaseapp.com",
+    projectId: "menu-616b0",
+    storageBucket: "menu-616b0.firebasestorage.app",
+    messagingSenderId: "227402954228",
+    appId: "1:227402954228:web:d2540d913344ab445fb5a1",
+    measurementId: "G-924L4JFHHX"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   <script>
     // Shared data between views
     let currentOrder = {
